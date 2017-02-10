@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1460408956 source:c:\users\cgao\desktop\c++\line2pixel\main2.cpp
+	"line2pixel.h"
+	<fstream>
+	<string>
+	<sstream>
+	"stdlib.h"
+
+1460428553 c:\users\cgao\desktop\c++\line2pixel\line2pixel.h
+	<vector>
+	<fstream>
+	<cmath>
+	<iostream>
+

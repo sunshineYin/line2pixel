@@ -1,0 +1,29 @@
+%save data.mat data
+
+clc
+clear all
+close all
+load data
+image = zeros(1000,1000);
+xdiff = 2071;
+ydiff = 33271;
+data = double(data);
+add = 60800;
+for i = 1 : size(data,1)
+    x_pos = data(i,1) - xdiff;
+    y_pos = data(i,2) - ydiff;
+    if x_pos >= 60800 & x_pos < 61 & y_pos <= 1000
+        image(y_pos, x_pos) = 1;
+    end
+    disp(i);
+end
+image = flipud(image);
+imshow(image);
+% display('all done');
+% imwrite(image,'image.png','png');
+% figure;
+% 
+ 
+% figure
+% BW1 = edge(image,'Canny');
+% imshow(BW1)
